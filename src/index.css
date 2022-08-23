@@ -1,0 +1,328 @@
+@import url('https://fonts.googleapis.com/css2?family=Barlow+Semi+Condensed:wght@600;700&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-image: radial-gradient(hsl(214, 47%, 23%), hsl(237, 49%, 15%));
+    /* background-color: steelblue; */
+    font-size: 15px;
+    font-family: 'Barlow Semi Condensed', sans-serif;
+}
+
+.head-title{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 1rem;
+    margin-left: auto;
+    margin-right: auto;
+    border: solid 5px hsl(217, 16%, 45%);
+    border-radius: 10px;
+    padding: 1em;
+    max-width: 80%;
+}
+
+.score-box{
+text-align: center;
+padding: 0.5em;
+background-color: white;
+border-radius: 6px;
+}
+
+.score-title{
+    font-weight: 600;
+    color: hsl(229, 64%, 46%);
+    font-size: 14px;
+}
+.score-num{
+    font-weight: 700;
+    font-size: 20px;
+    color: hsl(229, 25%, 31%);
+}
+
+img.logo-img{
+    /* width: 7rem; */
+    width: 5rem;
+}
+
+.game-container{
+    text-align: center;
+    margin: 2em auto;
+   max-width: 25rem;
+     /* display: flex;
+    align-items: center;
+    text-align: center;
+    margin: 0 auto; */
+
+    /* width: 20rem;
+    margin: 0 auto; */
+    
+    /*margin: auto;
+    padding: 2em;
+    height: 100vh;
+    width: 22rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+   flex-direction: column;*/
+}
+
+
+ .game-section-container{
+    padding: 2em;
+    margin-top: 3rem;
+    margin-bottom: 2rem;
+    margin-right: auto;
+    margin-left: auto;
+    width: 15rem;
+    height: 15rem;
+    /* position: absolute;
+    top: 0;
+    left: 15%; */
+     position: relative; 
+    
+}
+
+
+.triangle-img{
+    left: 3rem;
+    position: absolute;
+}
+.pic-paper{
+    width: auto;
+    background-color: white;
+    border-radius: 100%;
+    padding: 0.5em;
+    box-shadow: 0 2px 6px 0 white;
+}
+.pic-scissors{
+    width: auto;
+    background-color: white;
+    border-radius: 100%;
+    padding: 0.5em;
+    box-shadow: 0 2px 6px 0 white;
+}
+.pic-rock{
+    width: auto;
+    background-color: white;
+    border-radius: 100%;
+    padding: 0.5em;
+    box-shadow: 0 2px 6px 0 white;
+}
+
+.paper-img{
+   top: -2rem;
+   left: -2em;
+   position: absolute;
+   background-image: -webkit-radial-gradient(hsl(230, 89%, 62%), hsl(230, 89%, 65%));
+   padding: 1em;
+   border-radius: 100%;
+   box-shadow: 0 7px 2px 0 hsl(230, 89%, 62%), 0 3px 5px 0 hsl(230, 89%, 65%);
+   /* border:  solid 0.938em blue; */
+}
+
+.scissors-img{
+    top: -2rem;
+   left: 12em;
+   position: absolute;
+   background-image: -webkit-radial-gradient(hsl(39, 89%, 49%), hsl(40, 84%, 53%));
+   padding: 1em;
+   border-radius: 100%;
+   box-shadow: 0 7px 2px 0 hsl(39, 89%, 49%), 0 3px 5px 0 hsl(40, 84%, 53%);
+   /* border:  solid 0.938em transparent; */
+   /* border-image: linear-gradient(hsl(39, 89%, 49%), hsl(40, 84%, 53%));
+   border-image-slice: 1; */
+   /* width: auto; */
+}
+
+.rock-img{
+    position: absolute;
+    top: 10em;
+    left: 5em;
+    /* background-color: white; */
+   padding: 1em;
+   border-radius: 100%;
+   background-image: -webkit-radial-gradient(hsl(349, 71%, 52%), hsl(349, 70%, 56%));
+   box-shadow: 0 7px 2px 0 hsl(349, 71%, 52%), 0 3px 5px 0 hsl(349, 70%, 56%);
+   /* border:  solid 0.938em red;
+   width: auto; */
+} 
+
+@media only screen and (max-width: 468px) {
+
+    .paper-img{
+       padding: 0.7em; 
+    }
+    .scissors-img{
+        padding: 0.7em;
+        left: 6em;
+    }
+    .rock-img{
+       padding: 0.7em;
+        top: 6em;
+        left: 2em;
+    }
+     .game-section-container{
+        padding: 2em;
+        margin-top: 3rem;
+        margin-bottom: 2rem;
+        margin-right: auto;
+        margin-left: auto;
+        width: 10rem;
+        height: 15rem;
+        
+    } 
+    
+}
+
+
+
+/*.rules-btn{
+    top: 30rem;
+    position: absolute;
+    padding: 0.6em;
+    border: none;
+    border-radius: 8px;
+}*/
+
+.step-two-container{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.step-two-container{
+    margin-top: 2em;
+    margin-bottom: 2em;
+}
+
+.paper-img2{
+    background-color: white;
+   padding: 1em;
+   border-radius: 100%;
+   border:  solid 15px blue;
+   margin-bottom: 2em;
+}
+
+.scissors-img2{
+   background-color: white;
+   padding: 1em;
+   border-radius: 100%;
+   border:  solid 15px yellow;
+   margin-bottom: 2em;
+}
+
+.you-img{
+    border: solid;
+    padding: 2em;
+    margin-bottom: 2em;
+    background-color: darkslategrey;
+    border-radius: 100%;
+}
+
+.house-img{
+    border: solid;
+    padding: 4em;
+    margin-bottom: 2em;
+    background-color: darkslategrey;
+    border-radius: 100%;
+    border: none;
+}
+
+p.you-txt, .house-txt{
+    color: white;
+}
+
+.rules-btn-container{
+    text-align: center;
+    margin-top: 4em;
+}
+
+button.rules-btn{
+    padding: 0.6em 2em;
+    border-radius: 7px;
+    background-color: transparent;
+    color: white;
+    border: solid 1px white;
+    cursor: pointer;
+    margin-bottom: 5em;
+    font-weight: 600;
+    font-size: 12px;
+}
+
+.result{
+    text-align: center;
+    margin: 2rem;
+}
+
+h1 {
+    color: white;
+    font-size: 2.5em;
+    margin-bottom: 8px;
+}
+
+button.result-btn{
+    padding: 0.6em 3.5em;
+    border-radius: 5px;
+    border: none;
+    color: hsl(229, 25%, 31%);
+    font-weight: 700;
+    cursor: pointer;
+}
+
+.modal-box{
+    position: fixed;
+    z-index: 1;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    overflow: auto;
+    background-color: rgb(0, 0, 0);
+    background-color: rgba(0, 0, 0, 0.4);
+}
+
+
+.modal-box-content{
+    margin: 3em auto;
+    padding: 3em;
+    max-width: 25rem;
+    display: grid;
+    align-items: center;
+    /* justify-content: space-between; */
+    background-color: white;
+    grid-template-columns: auto;
+    grid-template-rows: 2em;
+    grid-template-areas: 
+    "header"
+    "img"
+    "close";
+    /* grid-template-areas: 
+    "header close"
+    "img img"; */
+    row-gap: 4em;
+    border-radius: 8px;
+}
+
+.close {
+    color: hsl(229, 25%, 31%);
+    float: right;
+    font-size: 3em;
+    cursor: pointer;
+    grid-area: close;
+}
+
+.modal-img{
+    grid-area: img;
+    width: 100%;
+}
+
+h2{
+    grid-area: header;
+    color: hsl(229, 25%, 31%);
+    font-weight: 700;
+}
